@@ -1,12 +1,12 @@
-import { fetchSearchedMovies } from '../../api';
 import { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import toast from 'react-hot-toast';
 
-import SearchForm from 'components/SearchForm/SearchForm';
-import { MoviesList } from 'components/MoviesList/MoviesList';
-import Loader from '../../Loader';
-import Error from 'components/Error/Error';
+import { fetchSearchedMovies } from '../api';
+import SearchForm from '../components/SearchForm/SearchForm';
+import { MoviesList } from '../components/MoviesList/MoviesList';
+import Loader from '../Loader';
+import Error from '../components/Error/Error';
 
 export default function MoviesPage() {
   const [movies, setMovies] = useState([]);

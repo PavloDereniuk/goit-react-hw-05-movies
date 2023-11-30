@@ -1,10 +1,10 @@
 import { Link, Outlet, useLocation, useParams } from 'react-router-dom';
 import { useEffect, useRef, useState } from 'react';
 
-import { fetchMovieDetails } from '../../api';
-import { MovieItem } from 'components/MovieItem/MovieItem';
-import Loader from '../../Loader';
-import Error from 'components/Error/Error';
+import { fetchMovieDetails } from '../api';
+import { MovieItem } from '../components/MovieItem/MovieItem';
+import Loader from '../Loader';
+import Error from '../components/Error/Error';
 
 export default function MovieDetailsPage() {
   const [movie, setMovie] = useState(null);

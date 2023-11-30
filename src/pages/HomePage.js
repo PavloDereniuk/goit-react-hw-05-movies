@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 
-import { fetchTrendMovies } from '../../api';
-import { MoviesList } from 'components/MoviesList/MoviesList';
-import Loader from '../../Loader';
-import Error from 'components/Error/Error';
+import { fetchTrendMovies } from '../api';
+import { MoviesList } from '../components/MoviesList/MoviesList';
+import Loader from '../Loader';
+import Error from '../components/Error/Error';
 
 export default function HomePage() {
   const [topMovies, setTopMovies] = useState([]);
